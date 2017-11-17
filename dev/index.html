@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gauss – Seidel</title>
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="enter-values">
+            <h1 class="animated bounceInDown">Gauss – Seidel method</h1>
+            <div class="size-matrix">
+                <div class="start">
+                    <div class="animated bounceInLeft accuracy">
+                        <label for="accuracy">Accuracy: </label>
+                        <input id="accuracy" type="text" value="0.001">
+                    </div>
+                    <div class="animated bounceInRight button-start">
+                        <input id="sizeMatrix" class="g-btn" type="button" value="Next">
+                    </div>
+                </div>
+            </div>
+            <div id="blockMatrixBtn" class="hidden"> 
+                <div class="matrix" id="matrix"></div>
+                <div class="animated flipInX button-answer">
+                        <input id="answer-btn" class="g-btn" type="button" value="Answer">
+                </div>
+            </div>
+        </div>
+        <div id="blockAnswer" class="hidden">
+            <div class="norm">
+                <div class="first-norm" id="firstNorm"></div>
+                <div class="second-norm" id="secondNorm"></div>
+                <div class="third-norm" id="thirdNorm"></div>
+            </div>
+            <div class="third-norm-max" id="thirdNormMax"></div>
+            <div class="tableBlock">
+                <table class="animated jeckInTheBox table">
+                    <thead>
+                        <tr>
+                            <th>№ iteration</th>
+                            <th>x<sub>1</sub></th>
+                            <th>x<sub>2</sub></th>
+                            <th>x<sub>3</sub></th>
+                            <th>x<sub>4</sub></th>
+                            <th>Error</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table">
+
+                    </tbody>
+                </table>
+            </div>
+            <div class="rollIn answer" id="answer"><div>Answer: </div></div>
+        </div>
+    </div>
+    <script src="js/code.js"></script>
+</body>
+</html>
